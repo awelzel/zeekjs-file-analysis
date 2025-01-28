@@ -55,6 +55,7 @@ const requestListener = function (req, res) {
         // Could make this async and wait before replying
         // only after file_state_remove ran for the uuid
         // and respond with f$info as json form.
+        res.setHeader('Content-Type', 'application/json');
         res.writeHead(200);
         res.end(JSON.stringify(job));
       }
