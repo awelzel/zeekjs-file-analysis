@@ -30,9 +30,9 @@ const requestListener = function (req, res) {
   let file_path = job_dir + "/file";
 
   // Should probably stream to disk directly instead.
-  var buf = '';
-  req.on('data', (data) => {
-    buf += data;
+  var buf = Buffer.alloc(0);
+  req.on('data', (chunk) => {
+    buf = Buffer.concat([buf, chunk]);
   });
 
   req.on('end', () => {
