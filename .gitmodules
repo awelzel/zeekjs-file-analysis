@@ -1,0 +1,6 @@
+[submodule "external/spicy-png"]
+	path = external/spicy-png
+	url = git@github.com:zeek/spicy-png.git
+[submodule "external/spicy-zip"]
+	path = external/spicy-zip
+	url = git@github.com:zeek/spicy-zip.git

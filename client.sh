@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eu
 
-URL=${URL:-http://localhost:1234}
+URL=${URL:-http://localhost:1234/upload}
 
-curl -v  --data-binary "@${1}" "${URL}"
+curl -v  -F xxx=yyy -F "file=@${1}" "${URL}"

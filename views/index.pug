@@ -1,0 +1,25 @@
+html
+  head
+    title Zeek FAPI
+    style.
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+  body
+    header
+      h1 File Analysis
+    form(action='/upload' method='POST' enctype='multipart/form-data')
+      table
+        tr
+          td
+            input(type='file' name='file')
+          td
+            button(type='submit') Upload
+
+    footer
+      p Zeek version #{version}
