@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-set -eu
+set -eux
 
 URL=${URL:-http://localhost:1234/upload}
 
-curl -v  -F xxx=yyy -F "file=@${1}" "${URL}"
+curl -v  -F "file=@${1}" "${URL}"

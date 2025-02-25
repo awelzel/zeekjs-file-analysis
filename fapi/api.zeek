@@ -7,5 +7,9 @@ export {
 	const work_dir: string = "./fapi_workdir" &redef;
 }
 
+redef record Files::Info += {
+	job_id: string &log &optional;
+};
+
 @load ./http.js
 @load ./handlers.js
