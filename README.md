@@ -2,6 +2,7 @@
 
 Provide an API hosted by Zeek for file analysis.
 
+    $ npm install
     $ zeek fapi/api.zeek
 
 You may also provide to http://localhost:1234 to get a very basic
